@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="container col-md-6">
+        <div class="card-header">
+            <h2>Annadir Personas</h2>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label for="nombre" class="control-label mb-1">Nombre:</label>
+                <input #nombre type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="nombre" class="control-label mb-1">Apellido:</label>
+                <input #apellidos type="text" class="form-control">
+            </div>
+            <button (click)="actualizar(nombre.value, apellidos.value)" class="btn btn-danger">Guardar</button>
+        </div>
+    </div>
+</div>
